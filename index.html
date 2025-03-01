@@ -14,10 +14,34 @@
     <link rel="stylesheet" href="styles/fonts.css">
 </head>
 
-<body>
+<body class="container mx-auto bg-slate-100">
 
-Hello World!
+    <header>
+        <nav class="flex justify-between w-[90%] mx-auto bg-white p-3 rounded-xl mt-4 items-center">
+            <!-- Logo Container (Left) -->
+            <div class="flex gap-2 text-3xl items-center">
+                <img src="assets/logo.png" class="h-8 w-8">
+                <p class="poppins-light">Dev<span class="poppins-semibold">Board</span></p>
+            </div>
+            <!-- Completed Task Counter & BG Changer (Right) -->
+            <div class="flex items-center gap-6">
+                <div class="tick-container flex gap-2 items-center px-4 py-2 rounded-full bg-slate-100">
+                    <img src="assets/checkbox.png" alt="">
+                    <p class="poppins-bold text-2xl">75</p>
+                </div>
+                <div class="color-picker bg-slate-100 p-2 rounded-full">
+                    <img src="assets/theme-btn.png" alt="" class="h-8 w-8">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
 
+    </main>
+
+    <footer>
+
+    </footer>
     <script src="scripts/script.js"></script>
     <script src="utilities/utilities.js"></script>
 </body>
