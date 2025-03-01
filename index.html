@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/fonts.css">
 </head>
 
-<body class="container mx-auto bg-slate-100">
+<body class="container mx-auto bg-slate-100 poppins-regular">
 
     <header>
         <nav class="flex justify-between w-[95%] mx-auto bg-white p-3 rounded-xl mt-4 items-center">
@@ -35,7 +35,7 @@
             </div>
         </nav>
     </header>
-    <main class="flex w-[95%] mx-auto justify-between mt-4">
+    <main class="flex w-[95%] mx-auto justify-between my-4">
         <div class="left-body w-[69%] bg-white rounded-xl"> <!-- Left Body -->
             <div class="left-top grid grid-cols-4 gap-4 p-4"> <!-- Left Top -->
                 <!-- 1 / 4 -->
@@ -45,7 +45,7 @@
                     </div>
                     <div class="flex flex-col p-1 gap-1">
                         <div>
-                            <p class="text-lg">Task Assigned</p>
+                            <p class="text-base">Task Assigned</p>
                         </div>
                         <div>
                             <p class="poppins-bold text-2xl">06</p>
@@ -70,6 +70,106 @@
                         <div>
                             <p id="date" class="poppins-bold text-lg"></p>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-gray-200 my-2">
+            <!-- Task Cards -->
+            <div class="grid grid-cols-3 gap-4 p-4">
+                <div class="bg-slate-100 p-4 rounded-lg ">
+                    <p class="bg-white inline-block px-2 py-1 rounded-lg text-gray-700">ShopEase</p>
+                    <p class="text-xl my-4">Fix Product Search Issues</p>
+                    <p class="bg-white inline-block px-2 py-1 rounded-lg text-sm text-gray-500">Improve search bar with
+                        autocomplete and better filtering options.</p>
+                    <hr class="border-gray-200 my-4">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-sm text-gray-700">Deadline</p>
+                            <p class="poppins-semibold">15 March 2025</p>
+                        </div>
+                        <button class="py-2 px-3 bg-[#3652FC] rounded-lg text-white">
+                            Completed
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-slate-100 p-4 rounded-lg ">
+                    <p class="bg-white inline-block px-2 py-1 rounded-lg text-gray-700">PaySwift</p>
+                    <p class="text-xl my-4">Fix Checkout Page UI</p>
+                    <p class="bg-white inline-block px-2 py-1 rounded-lg text-sm text-gray-500">Adjust spacing, form
+                        validation, and optimize mobile responsiveness.</p>
+                    <hr class="border-gray-200 my-4">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-sm text-gray-700">Deadline</p>
+                            <p class="poppins-semibold">21 March 2025</p>
+                        </div>
+                        <button class="py-2 px-3 bg-[#3652FC] rounded-lg text-white">
+                            Completed
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-slate-100 p-4 rounded-lg ">
+                    <p class="bg-white inline-block px-2 py-1 rounded-lg text-gray-700">QuickCart</p>
+                    <p class="text-xl my-4">Fix Page Load Speed</p>
+                    <p class="bg-white inline-block px-2 py-1 rounded-lg text-sm text-gray-500">Optimize CSS,
+                        JavaScript, and implement image lazy loading.</p>
+                    <hr class="border-gray-200 my-4">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-sm text-gray-700">Deadline</p>
+                            <p class="poppins-semibold">19 March 2025</p>
+                        </div>
+                        <button class="py-2 px-3 bg-[#3652FC] rounded-lg text-white">
+                            Completed
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-slate-100 p-4 rounded-lg ">
+                    <p class="bg-white inline-block px-2 py-1 rounded-lg text-gray-700">StyleHub</p>
+                    <p class="text-xl my-4">Fix Dark Mode Issues</p>
+                    <p class="bg-white inline-block px-2 py-1 rounded-lg text-sm text-gray-500">Ensure UI adapts
+                        properly and store theme preferences.</p>
+                    <hr class="border-gray-200 my-4">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-sm text-gray-700">Deadline</p>
+                            <p class="poppins-semibold">20 March 2025</p>
+                        </div>
+                        <button class="py-2 px-3 bg-[#3652FC] rounded-lg text-white">
+                            Completed
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-slate-100 p-4 rounded-lg ">
+                    <p class="bg-white inline-block px-2 py-1 rounded-lg text-gray-700">FoodNest</p>
+                    <p class="text-xl my-4">Fix User Profile Page</p>
+                    <p class="bg-white inline-block px-2 py-1 rounded-lg text-sm text-gray-500">Improve layout, add
+                        profile picture update, and manage addresses.</p>
+                    <hr class="border-gray-200 my-4">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-sm text-gray-700">Deadline</p>
+                            <p class="poppins-semibold">22 March 2025</p>
+                        </div>
+                        <button class="py-2 px-3 bg-[#3652FC] rounded-lg text-white">
+                            Completed
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-slate-100 p-4 rounded-lg ">
+                    <p class="bg-white inline-block px-2 py-1 rounded-lg text-gray-700">TechBazaar</p>
+                    <p class="text-xl my-4">Fix Navigation Bar Issues</p>
+                    <p class="bg-white inline-block px-2 py-1 rounded-lg text-sm text-gray-500">Keep navbar fixed on
+                        scroll and improve dropdown responsiveness.</p>
+                    <hr class="border-gray-200 my-4">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-sm text-gray-700">Deadline</p>
+                            <p class="poppins-semibold">23 March 2025</p>
+                        </div>
+                        <button class="py-2 px-3 bg-[#3652FC] rounded-lg text-white">
+                            Completed
+                        </button>
                     </div>
                 </div>
             </div>
