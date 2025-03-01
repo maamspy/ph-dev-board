@@ -27,7 +27,7 @@
             <div class="flex items-center gap-6">
                 <div class="tick-container flex gap-2 items-center px-4 py-2 rounded-full bg-slate-100">
                     <img src="assets/checkbox.png" alt="">
-                    <p class="poppins-bold text-2xl">75</p>
+                    <p id="task-completeCount" class="poppins-bold text-2xl">75</p> <!-- Added ID -->
                 </div>
                 <div class="color-picker bg-slate-100 p-2 rounded-full">
                     <img src="assets/theme-btn.png" alt="" class="h-8 w-8">
@@ -48,13 +48,13 @@
                             <p class="text-base">Task Assigned</p>
                         </div>
                         <div>
-                            <p class="poppins-bold text-2xl">06</p>
+                            <p id="task-toDo" class="poppins-bold text-2xl">06</p>
                         </div>
                     </div>
                 </div>
                 <!-- 2 / 4 -->
-                <div class="col-span-2 bg-slate-100 rounded-lg flex gap-4 h-28 items-center px-6
-                bg-gradient-to-r from-[#3A54FD] via-60% to-[#99A6F8]">
+                <div class="col-span-2 cursor-pointer bg-slate-100 rounded-lg flex gap-4 h-28 items-center px-6
+                bg-gradient-to-r from-[#3A54FD] via-60% to-[#99A6F8]" onclick="window.location.href='/blogs.html'">
                     <img src="assets/board.png" class="w-20">
                     <p class="poppins-semibold text-white text-xl">Discover Something <br>New Today!</p>
                 </div>
@@ -78,8 +78,9 @@
             <div class="grid grid-cols-3 gap-4 p-4">
                 <div class="bg-slate-100 p-4 rounded-lg ">
                     <p class="bg-white inline-block px-2 py-1 rounded-lg text-gray-700">ShopEase</p>
-                    <p class="text-xl my-4">Fix Product Search Issues</p>
-                    <p class="bg-white inline-block px-2 py-1 rounded-lg text-sm text-gray-500">Improve search bar with
+                    <p class="task-title text-xl my-4">Fix Product Search Issues</p>
+                    <p class="task-description bg-white inline-block px-2 py-1 rounded-lg text-sm text-gray-500">Improve
+                        search bar with
                         autocomplete and better filtering options.</p>
                     <hr class="border-gray-200 my-4">
                     <div class="flex justify-between items-center">
@@ -87,15 +88,17 @@
                             <p class="text-sm text-gray-700">Deadline</p>
                             <p class="poppins-semibold">15 March 2025</p>
                         </div>
-                        <button class="py-2 px-3 bg-[#3652FC] rounded-lg text-white">
-                            Completed
+                        <button
+                            class="task-button py-2 px-3 bg-[#3652FC] text-white rounded-lg transition hover:bg-blue-600">
+                            Completed?
                         </button>
                     </div>
                 </div>
                 <div class="bg-slate-100 p-4 rounded-lg ">
                     <p class="bg-white inline-block px-2 py-1 rounded-lg text-gray-700">PaySwift</p>
-                    <p class="text-xl my-4">Fix Checkout Page UI</p>
-                    <p class="bg-white inline-block px-2 py-1 rounded-lg text-sm text-gray-500">Adjust spacing, form
+                    <p class="task-title text-xl my-4">Fix Checkout Page UI</p>
+                    <p class="task-description bg-white inline-block px-2 py-1 rounded-lg text-sm text-gray-500">Adjust
+                        spacing, form
                         validation, and optimize mobile responsiveness.</p>
                     <hr class="border-gray-200 my-4">
                     <div class="flex justify-between items-center">
@@ -103,15 +106,17 @@
                             <p class="text-sm text-gray-700">Deadline</p>
                             <p class="poppins-semibold">21 March 2025</p>
                         </div>
-                        <button class="py-2 px-3 bg-[#3652FC] rounded-lg text-white">
-                            Completed
+                        <button
+                            class="task-button py-2 px-3 bg-[#3652FC] text-white rounded-lg transition hover:bg-blue-600">
+                            Completed?
                         </button>
                     </div>
                 </div>
                 <div class="bg-slate-100 p-4 rounded-lg ">
                     <p class="bg-white inline-block px-2 py-1 rounded-lg text-gray-700">QuickCart</p>
-                    <p class="text-xl my-4">Fix Page Load Speed</p>
-                    <p class="bg-white inline-block px-2 py-1 rounded-lg text-sm text-gray-500">Optimize CSS,
+                    <p class="task-title text-xl my-4">Fix Page Load Speed</p>
+                    <p class="task-description bg-white inline-block px-2 py-1 rounded-lg text-sm text-gray-500">
+                        Optimize CSS,
                         JavaScript, and implement image lazy loading.</p>
                     <hr class="border-gray-200 my-4">
                     <div class="flex justify-between items-center">
@@ -119,15 +124,17 @@
                             <p class="text-sm text-gray-700">Deadline</p>
                             <p class="poppins-semibold">19 March 2025</p>
                         </div>
-                        <button class="py-2 px-3 bg-[#3652FC] rounded-lg text-white">
-                            Completed
+                        <button
+                            class="task-button py-2 px-3 bg-[#3652FC] text-white rounded-lg transition hover:bg-blue-600">
+                            Completed?
                         </button>
                     </div>
                 </div>
                 <div class="bg-slate-100 p-4 rounded-lg ">
                     <p class="bg-white inline-block px-2 py-1 rounded-lg text-gray-700">StyleHub</p>
-                    <p class="text-xl my-4">Fix Dark Mode Issues</p>
-                    <p class="bg-white inline-block px-2 py-1 rounded-lg text-sm text-gray-500">Ensure UI adapts
+                    <p class="task-title text-xl my-4">Fix Dark Mode Issues</p>
+                    <p class="task-description bg-white inline-block px-2 py-1 rounded-lg text-sm text-gray-500">Ensure
+                        UI adapts
                         properly and store theme preferences.</p>
                     <hr class="border-gray-200 my-4">
                     <div class="flex justify-between items-center">
@@ -135,15 +142,17 @@
                             <p class="text-sm text-gray-700">Deadline</p>
                             <p class="poppins-semibold">20 March 2025</p>
                         </div>
-                        <button class="py-2 px-3 bg-[#3652FC] rounded-lg text-white">
-                            Completed
+                        <button
+                            class="task-button py-2 px-3 bg-[#3652FC] text-white rounded-lg transition hover:bg-blue-600">
+                            Completed?
                         </button>
                     </div>
                 </div>
                 <div class="bg-slate-100 p-4 rounded-lg ">
                     <p class="bg-white inline-block px-2 py-1 rounded-lg text-gray-700">FoodNest</p>
-                    <p class="text-xl my-4">Fix User Profile Page</p>
-                    <p class="bg-white inline-block px-2 py-1 rounded-lg text-sm text-gray-500">Improve layout, add
+                    <p class="task-title text-xl my-4">Fix User Profile Page</p>
+                    <p class="task-description bg-white inline-block px-2 py-1 rounded-lg text-sm text-gray-500">Improve
+                        layout, add
                         profile picture update, and manage addresses.</p>
                     <hr class="border-gray-200 my-4">
                     <div class="flex justify-between items-center">
@@ -151,15 +160,17 @@
                             <p class="text-sm text-gray-700">Deadline</p>
                             <p class="poppins-semibold">22 March 2025</p>
                         </div>
-                        <button class="py-2 px-3 bg-[#3652FC] rounded-lg text-white">
-                            Completed
+                        <button
+                            class="task-button py-2 px-3 bg-[#3652FC] text-white rounded-lg transition hover:bg-blue-600">
+                            Completed?
                         </button>
                     </div>
                 </div>
                 <div class="bg-slate-100 p-4 rounded-lg ">
                     <p class="bg-white inline-block px-2 py-1 rounded-lg text-gray-700">TechBazaar</p>
-                    <p class="text-xl my-4">Fix Navigation Bar Issues</p>
-                    <p class="bg-white inline-block px-2 py-1 rounded-lg text-sm text-gray-500">Keep navbar fixed on
+                    <p class="task-title text-xl my-4">Fix Navigation Bar Issues</p>
+                    <p class="task-description bg-white inline-block px-2 py-1 rounded-lg text-sm text-gray-500">Keep
+                        navbar fixed on
                         scroll and improve dropdown responsiveness.</p>
                     <hr class="border-gray-200 my-4">
                     <div class="flex justify-between items-center">
@@ -167,18 +178,27 @@
                             <p class="text-sm text-gray-700">Deadline</p>
                             <p class="poppins-semibold">23 March 2025</p>
                         </div>
-                        <button class="py-2 px-3 bg-[#3652FC] rounded-lg text-white">
-                            Completed
+                        <button
+                            class="task-button py-2 px-3 bg-[#3652FC] text-white rounded-lg transition hover:bg-blue-600">
+                            Completed?
                         </button>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="right-body" class="w-[29%] bg-white rounded-xl">
+            <div class="flex gap-2 justify-center py-4 items-center">
+                <img src="assets/activity.png" class="h-6 w-6">
+                <p class="text-xl">Activity Log</p>
+            </div>
+            <div class="flex justify-center">
+                <button id="clearHistory" class="py-2 px-3 bg-[#3652FC] rounded-lg text-white">
+                    Clear History
+                </button>
+            </div>
+            <hr class="border-gray-200 my-4">
+        </div>
     </main>
-
-    <footer>
-
-    </footer>
     <script src="scripts/script.js"></script>
     <script src="utilities/utilities.js"></script>
 </body>
