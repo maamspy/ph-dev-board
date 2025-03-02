@@ -36,57 +36,61 @@
         <div class="left-body w-full bg-white rounded-xl mb-4"> <!-- Blogs -->
             <p class="p-4 poppins-medium">Q1: What are the different ways to select an element in the DOM?</p>
             <hr class="border-gray-200">
-            <p class="p-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis molestias rerum aut
-                delectus quia labore harum voluptatibus nesciunt incidunt odit sint architecto quos veniam tempore,
-                cupiditate voluptates exercitationem laudantium nemo beatae veritatis temporibus tempora officiis?
-                Accusamus, vitae! Optio quod cum, vero at veritatis maiores mollitia animi architecto, deleniti autem
-                corrupti accusantium asperiores qui magnam quaerat commodi itaque voluptatem voluptatum delectus!
-                Aperiam, eaque dicta dolorum eveniet repellat, ipsam incidunt vitae hic odio tempore exercitationem eius
-                quos quaerat quidem nesciunt modi iure!</p>
+            <p class="p-4">In JS, there are multiple ways to select elements in the DOM. Let me give you some example:
+                <br><br>
+                <strong>1. getElementById()</strong> <br>
+                This selects an element by its unique id.
+                <br>
+                <strong>2. getElementsByClassName()</strong> <br>
+                This selects all elements with the specified class name and returns a live HTMLCollection.
+                <br>
+                <strong>3. getElementsByTagName()</strong> <br>
+                This selects all elements of a given tag name (like div, section, p etc.) and returns a live
+                HTMLCollection.
+                <br>
+                <strong>4. querySelector()</strong> <br>
+                This selects the first element that matches the CSS selector and returns a single element.
+                <br>
+                <strong>5. querySelectorAll()</strong> <br>
+                That selects all elements that match the CSS selector and returns a static NodeList.
+            </p>
         </div>
         <div class="left-body w-full bg-white rounded-xl mb-4"> <!-- Blogs -->
             <p class="p-4 poppins-medium">Q2: What is the difference between innerHTML, innerText, and textContent?</p>
             <hr class="border-gray-200">
-            <p class="p-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis molestias rerum aut
-                delectus quia labore harum voluptatibus nesciunt incidunt odit sint architecto quos veniam tempore,
-                cupiditate voluptates exercitationem laudantium nemo beatae veritatis temporibus tempora officiis?
-                Accusamus, vitae! Optio quod cum, vero at veritatis maiores mollitia animi architecto, deleniti autem
-                corrupti accusantium asperiores qui magnam quaerat commodi itaque voluptatem voluptatum delectus!
-                Aperiam, eaque dicta dolorum eveniet repellat, ipsam incidunt vitae hic odio tempore exercitationem eius
-                quos quaerat quidem nesciunt modi iure!</p>
+            <p class="p-4"><strong>innerHTML:</strong><br>
+                innerHTML gives all HTML content inside an element including all HTML tags.
+                <br> It can modify the HTML structure inside an element.
+                <br><br>
+                <strong> innerText: </strong><br>
+                innerText gives the visible text of an element only.
+                <br>It can modify the text, not the HTML structure.
+                <br><br>
+                <strong>textContent:</strong> <br>
+                textContent gives the text contents of an element while ignoring any HTML tags.
+                <br> It never considers CSS styles like hidden content and gives the entire text inside the element
+                where
+                innerText can't give hidden elements or text which is not displayed.
+            </p>
         </div>
         <div class="left-body w-full bg-white rounded-xl mb-4"> <!-- Blogs -->
             <p class="p-4 poppins-medium">Q3: What is event delegation in the DOM?</p>
             <hr class="border-gray-200">
-            <p class="p-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis molestias rerum aut
-                delectus quia labore harum voluptatibus nesciunt incidunt odit sint architecto quos veniam tempore,
-                cupiditate voluptates exercitationem laudantium nemo beatae veritatis temporibus tempora officiis?
-                Accusamus, vitae! Optio quod cum, vero at veritatis maiores mollitia animi architecto, deleniti autem
-                corrupti accusantium asperiores qui magnam quaerat commodi itaque voluptatem voluptatum delectus!
-                Aperiam, eaque dicta dolorum eveniet repellat, ipsam incidunt vitae hic odio tempore exercitationem eius
-                quos quaerat quidem nesciunt modi iure!</p>
+            <p class="p-4">Event delegation is a way of handling events in the DOM by attaching a single event listener to a parent element instead of adding listeners to every child element. When an event happens on a child element, it bubbles up to the parent and the parent can handle it. <br>
+                <strong>Pros: </strong>If new items are added to the list later, we don’t need to add new event listeners. <br>
+                Thus, we can keep the code simple and easy to maintain. </p>
         </div>
         <div class="left-body w-full bg-white rounded-xl mb-4"> <!-- Blogs -->
             <p class="p-4 poppins-medium">Q4: What is event bubbling in the DOM?</p>
             <hr class="border-gray-200">
-            <p class="p-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis molestias rerum aut
-                delectus quia labore harum voluptatibus nesciunt incidunt odit sint architecto quos veniam tempore,
-                cupiditate voluptates exercitationem laudantium nemo beatae veritatis temporibus tempora officiis?
-                Accusamus, vitae! Optio quod cum, vero at veritatis maiores mollitia animi architecto, deleniti autem
-                corrupti accusantium asperiores qui magnam quaerat commodi itaque voluptatem voluptatum delectus!
-                Aperiam, eaque dicta dolorum eveniet repellat, ipsam incidunt vitae hic odio tempore exercitationem eius
-                quos quaerat quidem nesciunt modi iure!</p>
+            <p class="p-4">Event bubbling is a process in the DOM where an event starts from the target element and then goes up to its parent nodes, then to its grandparent nodes and so on till the way up to the root of the document.</p>
         </div>
         <div class="left-body w-full bg-white rounded-xl mb-4"> <!-- Blogs -->
             <p class="p-4 poppins-medium">Q5: How do you create, add, and remove elements using JavaScript?</p>
             <hr class="border-gray-200">
-            <p class="p-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis molestias rerum aut
-                delectus quia labore harum voluptatibus nesciunt incidunt odit sint architecto quos veniam tempore,
-                cupiditate voluptates exercitationem laudantium nemo beatae veritatis temporibus tempora officiis?
-                Accusamus, vitae! Optio quod cum, vero at veritatis maiores mollitia animi architecto, deleniti autem
-                corrupti accusantium asperiores qui magnam quaerat commodi itaque voluptatem voluptatum delectus!
-                Aperiam, eaque dicta dolorum eveniet repellat, ipsam incidunt vitae hic odio tempore exercitationem eius
-                quos quaerat quidem nesciunt modi iure!</p>
+            <p class="p-4">To create an element, we use document.createElement() while passing the tag name of the element we want to create. <br> <br>
+                We can add text or HTML to the created element using textContent or innerHTML. Once the element is created, we need to add it to the DOM using appendChild(). <br> <br>
+                To remove an element, we use removeChild() on the parent element.</p>
         </div>
     </main>
     <script src="scripts/script.js"></script>
