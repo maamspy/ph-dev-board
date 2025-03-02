@@ -39,19 +39,22 @@ document.addEventListener("DOMContentLoaded", function () {
         taskHoiche.innerText = taskDid;
 
         this.innerText = "Completed";
-        this.classList.add('cursor-not-allowed');
         this.style.opacity = "0.5";
         this.disabled = true;
 
-        let timestamp = new Date().toLocaleString();
+        let timestamp = new Date().toLocaleString('en-US', {
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit'
+        });
         let logEntry = document.createElement("p");
         logEntry.className = "w-[95%] mx-auto p-2 m-2 bg-slate-100 rounded-lg text-gray-600 text-base";
-        logEntry.textContent = `You have completed the ${taskName} at ${timestamp}.`;
+        logEntry.textContent = `You have completed the task ${taskName} at ${timestamp}.`;
 
         logsDiv.appendChild(logEntry);
 
         if (taskBaki == 0) {
-          alert('All Done!')
+          alert('Congrats! You have completed all the current tasks.')
         }
       }
     });
